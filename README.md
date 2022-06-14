@@ -47,7 +47,7 @@ Una vez registrado, el usuario puede ingresar por medio del formulario de ingres
 ![formulario](https://user-images.githubusercontent.com/105566014/173603835-044e11f8-f035-4c87-a0b7-afc696e03174.PNG)
 
 ## Listado de "Coins"
-Una vez autenticado por la aplicación, el usuario puede listar todas las criptomonedas disponibles. El backend verificará el token de acceso y si es válido solicitará a CoinGecko por medio del metodo requerido el listado completo. Cumpliendóse así los últimos tres pasos para cerrar el ciclo JWT.
+Una vez autenticado por la aplicación, el usuario puede listar todas las criptomonedas disponibles. El backend verificará el token de acceso y si es válido solicitará a CoinGecko por medio del método requerido el listado completo. Cumpliendóse así los últimos tres pasos para cerrar el ciclo JWT.
 También puede guardar una o más criptomonedas en su Wallet con solo clickear la seleccionada.
 
 ![Listado](https://user-images.githubusercontent.com/105566014/173605034-480ded01-a135-4539-a581-5514c89899f5.PNG)
