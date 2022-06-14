@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Crypto Monitor</title>
+</head>
+
+<style>
+    #caja{
+        margin: 0 auto;
+        padding: 10px;
+        position: absolute;
+        top: 25%;
+        left:25%;
+        width: 30%;
+        height: 50%;
+    }
+
+    section {
+        width: 90%;
+        padding: 3px;
+        margin: 1%;
+        text-align: center;
+    }
+    nav {
+        margin-top: 15px;
+        background-color: lightskyblue;
+        height: 50px;
+    }
+    a {
+        margin-left: 25px;
+        font-size: 30px;
+        color: black;
+    }
+</style>
+    <body id="body" style="min-width:900px;">
+        <nav style="text-align: center;">
+            <label id ="etiqueta" style="text-align: left; font-size: 15px;"></label>
+            <a id = "coins" href = "">Coins</a>
+            <a id = "wallet" href = "">My Wallet</a>
+            <a id = "login" href = "">Login</a>
+            <a id = "register" href ="">Register</a>
+        </nav>
+        <div style="text-align: center; margin: 10px;">
+            <form name ="formLogin" id="formLogin" action="/v1/users/login" method="POST" style="display:none">
+                <input type="text" name="user" required>
+                <input type="password" name="password" required>
+                <input type="submit" value="Login" id="btnLogin">
+            </form>
+        
+            <form name = "formRegister"id="formRegistro" action="/v1/users/sign-up" method="POST" style="display: none;">
+                <input type="text" name="user">
+                <input type="password" name="password">
+                <input type="submit" value="Register" id ="btnRegistro">
+            </form>
+        </div>
+        <section id ="lista"></section>
+        <script src="../componentes/inicio.js"></script>  
+        <script src="../componentes/login.js"></script>  
+        <script src="../componentes/register.js"></script>  
+        <script src="../componentes/coinsList.js"></script>  
+        <script src="../componentes/wallet.js"></script>  
+    </body>    
+</html>
+
+
+
+
+
+

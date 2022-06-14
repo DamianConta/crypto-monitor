@@ -1,0 +1,20 @@
+<h2>Coins available</h2>
+<hr>
+<style>
+	div:hover{
+		color:red;
+	}
+</style>
+{{#each lista}}
+	{{#if id.length }}
+		<div id ={{id}}>
+			<p style="font-size: 12px;">	
+				Id:   	     {{id}} ||
+				Name: 	   {{name}} ||
+				Symbol:    {{symbol}}||
+			</p>
+		</div>
+		<hr>
+	{{/if}}
+
+{{/each}}
