@@ -3,7 +3,7 @@
   <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
 </p>
 
-## Install
+## Instalación
 
 Descargar todos los archivos y carpetas a una carpeta local. Luego ejecutar el siguiente comando para restaurar todas las dependencias.
 
@@ -11,11 +11,12 @@ Descargar todos los archivos y carpetas a una carpeta local. Luego ejecutar el s
 npm i
 ```
 
-## Usage
+## Uso
 
 Crear el archivo .env y definir las siguientes variables de entorno. Reemplazar los valores.
 
 MONGODB = 'Mi_URI_MONGO_DB
+
 JWTSECRETKEY = 'MI_clave_secreta'
 
 ```sh
@@ -31,6 +32,7 @@ El usuario puede ingresar con su password y si es válido la aplicación devolve
 
 Si el usuario no posee un password puede registrarse con el siguiente formulario.
 
+![formulario](https://user-images.githubusercontent.com/105566014/173603835-044e11f8-f035-4c87-a0b7-afc696e03174.PNG)
 
 Una vez autenticado por la aplicación, el usuario puede listar todas las criptomonedas disponibles.
 
