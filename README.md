@@ -27,6 +27,7 @@ npm run start
 La aplicación provee un listado de criptomonedas disponibles ofrecidas por la api de CoinGecko https://www.coingecko.com/en/api
 El usuario puede ingresar con su password y si es válido la aplicación devolverá un token para que pueda consumir los servicios ofrecidos por la aplicación. Cumpliendo con el estandar RFC7519 para la autenticación.
 
+![cryptoMonitor](https://user-images.githubusercontent.com/105566014/173602331-8cd9aaf4-9cd4-4550-9aa8-5c04b1e98929.PNG)
 
 Si el usuario no posee un password puede registrarse con el siguiente formulario.
 
