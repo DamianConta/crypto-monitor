@@ -27,6 +27,15 @@ npm ./bin/app.js
 La aplicación provee un listado de criptomonedas disponibles ofrecidas por la api de CoinGecko https://www.coingecko.com/en/api
 El usuario puede ingresar con su password y si es válido la aplicación devolverá un token para que pueda consumir los servicios ofrecidos por la aplicación. Cumpliendo con el estandar RFC7519 para la autenticación.
 
+<ol>
+  <li>El browser envía "user" y "password" al servidor.</li>
+  <li>El servidor verifica el usuario y si es válido crea un JWT</li>
+  <li>El servidor envía al browser la respuesta con el JWT</li>
+  <li>El browser envía su solicitud junto con el JWT</li>
+  <li>El servidor verifica el JWT</li>
+  <li>El servidor envía al browser la respuesta con el JWT</li> 
+</ol>
+
 ## Registro de Usuario
 Si el usuario no posee un password puede registrarse con el siguiente formulario.
 
