@@ -16,6 +16,7 @@ npm i
 Crear el archivo .env y definir las siguientes variables de entorno. Reemplazar los valores.
 
 MONGODB = 'Mi_URI_MONGO_DB
+
 JWTSECRETKEY = 'MI_clave_secreta'
 
 ```sh
