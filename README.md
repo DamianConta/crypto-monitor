@@ -20,7 +20,7 @@ MONGODB = 'Mi_URI_MONGO_DB
 JWTSECRETKEY = 'MI_clave_secreta'
 
 ```sh
-npm run start
+npm ./bin/app.js
 ```
 
 ## Acerca de esta app
@@ -32,9 +32,15 @@ El usuario puede ingresar con su password y si es válido la aplicación devolve
 
 Si el usuario no posee un password puede registrarse con el siguiente formulario.
 
+![Register](https://user-images.githubusercontent.com/105566014/173605967-76ba16e3-0c73-4f75-b21c-3aec19d7d622.PNG)
+
+Una vez registrado pasar al formulario de ingreso Login.
+
 ![formulario](https://user-images.githubusercontent.com/105566014/173603835-044e11f8-f035-4c87-a0b7-afc696e03174.PNG)
 
-Una vez autenticado por la aplicación, el usuario puede listar todas las criptomonedas disponibles.
+Una vez autenticado por la aplicación, el usuario puede listar todas las criptomonedas disponibles. El backend verificará el token de acceso y si es válido solicitará a CoinGecko por medio del metodo requerido el listado completo.
+
+
 
 
 También puede guardar una o más criptomonedas en su Wallet con solo clickear la seleccionada.
