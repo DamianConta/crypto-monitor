@@ -17,7 +17,7 @@ module.exports = {
                     }
                     token? res.status(200).json(response).end() : console.log('Error token');
                 } else{
-                    res.status(200).json({token:"",login:"Error"});
+                    res.status(401).json({token:"",login:"Error"}).end();
                 }
             })
         
@@ -27,9 +27,12 @@ module.exports = {
         await db.userdbUpdate({user: req.body.user,
                 password: req.body.password
             }).then(result=>{
-                if (result.upsertedCount==0) res.json({registro : "Existente"})
-                else res.json({registro : "Exitoso"})
+                if (result.upsertedCount==0) res.status(401).json({registro : "Existente"})
+                else res.status(200).json({registro : "Exitoso"}).end();
             })
-        }catch(err) {throw new Error("Error al registrar usuario")}
+        }catch(err) {
+            res.status(500).end()
+            throw new Error("Error al registrar usuario")
+        }
     } 
 }

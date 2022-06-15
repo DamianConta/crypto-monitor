@@ -1,6 +1,6 @@
  
  function indice(req,res){
-        res.sendFile(__dirname + '../views/index.html')
+        res.status(200).sendFile(__dirname + '../views/index.html')
     }
 
 module.exports = {

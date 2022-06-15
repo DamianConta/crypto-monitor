@@ -9,11 +9,9 @@ module.exports ={
             try{
                 if (serviciosJwt.verifyToken(req.token)) next()
             }catch(err){
-                res.sendStatus(403)
                 throw Error("Token inválido")
             }
         }else{
-            res.sendStatus(403);
             throw new Error("Sin Token")
         }
     }
