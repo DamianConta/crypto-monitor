@@ -15,9 +15,9 @@ module.exports = {
                         token : token,
                         login : "ok"                   
                     }
-                    token? res.status(200).json(response).end() : console.log('Error token');
+                    token? res.status(200).json(response) : console.log('Error token');
                 } else{
-                    res.status(401).json({token:"",login:"Error"}).end();
+                    res.status(401).json({token:"",login:"Error"})
                 }
             })
         
@@ -28,7 +28,7 @@ module.exports = {
                 password: req.body.password
             }).then(result=>{
                 if (result.upsertedCount==0) res.status(401).json({registro : "Existente"})
-                else res.status(200).json({registro : "Exitoso"}).end();
+                else res.status(200).json({registro : "Exitoso"});
             })
         }catch(err) {
             res.status(500).end()
