@@ -6,6 +6,7 @@ function showRegister(e){
     e.preventDefault();
     formRegistro.style.display = 'block';
     formLogin.style.display = 'none';
+    section.innerHTML="";
 }
 
 function postRegistro(e){

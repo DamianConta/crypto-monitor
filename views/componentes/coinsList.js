@@ -3,8 +3,9 @@ coins.addEventListener("click", listarCoins)
 
 function listarCoins(e){
     e.preventDefault();
+    section.innerHTML="<b>Cargando........</b>";
+
     if(localStorage.getItem("section")===""){
-        section.innerHTML="";
         fetch('./v1/coins/list',{
             method : 'GET',
             headers: {

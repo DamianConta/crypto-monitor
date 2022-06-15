@@ -9,6 +9,8 @@ function showLogin(e){
     formLogin.style.display = 'block';
     document.forms["formRegister"]["user"].value=""
     document.forms["formRegister"]["password"].value="" 
+    section.innerHTML="";
+    section.style.display="block";
 }
 
 function postLogin(e){

@@ -40,6 +40,6 @@ function getWallet(e){
     }).then(response => {
         return response.text()})
     .then(data =>{
-        section.innerHTML=data;
+        if (data!=="Forbidden") section.innerHTML=data;
     });
 }
