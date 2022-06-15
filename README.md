@@ -53,12 +53,12 @@ Una vez registrado, el usuario puede ingresar por medio del formulario de ingres
 
 ![Login](https://user-images.githubusercontent.com/105566014/173739807-833e232a-d25a-4226-8671-570751e41c3b.PNG)
 
-Despues de validarse el ingreso verá el siguiente aviso.
+Después de validarse el ingreso verá el siguiente aviso.
 
 ![Bienvenido](https://user-images.githubusercontent.com/105566014/173739844-6894d23c-2cb3-41ae-8f48-8be0e9661c95.PNG)
 
 ## Listado de "Coins"
-Una vez autenticado por la aplicación, el usuario puede listar todas las criptomonedas disponibles. El backend verificará el token de acceso y si es válido solicitará a CoinGecko por medio del método requerido el listado completo. Cumpliendóse así los últimos tres pasos para cerrar el ciclo JWT.
+Una vez autenticado por la aplicación, el usuario puede listar todas las criptomonedas disponibles. El backend verificará el token de acceso, si es válido solicitará a CoinGecko por medio del método requerido el listado completo. Cumpliendóse así los últimos tres pasos para cerrar el ciclo JWT.
 También puede guardar una o más criptomonedas en su Wallet con solo clickear la seleccionada.
 
 ![CoinList](https://user-images.githubusercontent.com/105566014/173739858-cbe1b511-753c-4beb-af8b-f5681a796333.PNG)
@@ -71,11 +71,11 @@ Haciendo click sobre una moneda seleccionada el usuario puede guardarla en su bi
 ## "My Wallet"
 Haciendo click en "My Wallet" el usuario puede acceder a la base de datos para verificar las criptomonedas añadidas. El backend verifica el Token y si es válido devolverá el listado al usuario.
 
-![Mywallet](https://user-images.githubusercontent.com/105566014/173605416-83117d90-56cd-4b69-97f8-d5804d02e66c.PNG)
+![MyWallet](https://user-images.githubusercontent.com/105566014/173741465-ddcede78-a166-434b-850a-ca49b6acc830.PNG)
 
 ## Author
 
 👤 **Damián Contardi**
 
-##¡Desde ya muchas gracias!
+¡Desde ya muchas gracias!
 
