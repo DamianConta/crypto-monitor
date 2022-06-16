@@ -18,6 +18,7 @@ function postLogin(e){
     section.innerHTML="";
     let form_data = new FormData(formLogin);
     let form_str = new URLSearchParams(form_data).toString(); 
+
     
     fetch('./v1/users/login',{
             method : 'POST',

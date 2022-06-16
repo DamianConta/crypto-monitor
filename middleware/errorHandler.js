@@ -4,7 +4,7 @@ module.exports = {
     },
 
     errorHandler(err,req,res,next){
-        console.log(`error del tipo :${err}`)
+        //console.log(`error del tipo :${err}`)
         res.status(500).end()
     }
 }
